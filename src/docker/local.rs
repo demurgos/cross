@@ -26,8 +26,9 @@ pub(crate) fn run(
     args: &[String],
     msg_info: &mut MessageInfo,
 ) -> Result<ExitStatus> {
-    dbg!(options);
-    dbg!(paths);
+    dbg!(&options);
+    dbg!(&paths);
+    dbg!(&args);
 
     let engine = &options.engine;
     let toolchain_dirs = paths.directories.toolchain_directories();
